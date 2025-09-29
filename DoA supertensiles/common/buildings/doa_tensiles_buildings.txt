@@ -1,0 +1,204 @@
+#FE Tier
+
+building_giga_fe_megaworkshop_doa = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+
+    icon = building_giga_fe_megaworkshop
+
+	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		government
+		giga_supertensile
+	}
+
+	potential = {
+		has_global_flag = @giga_amb_flag
+		owner = {
+			has_technology = giga_tech_fe_megaworkshop_doa_1
+			is_fallen_empire = no
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+        }
+        has_global_flag = @giga_amb_flag
+	}
+
+	destroy_trigger = {
+	    OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            NOT = { has_global_flag = @giga_amb_flag }
+        }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @b3_minerals
+			sr_living_metal = @fe_sr_cost
+		}
+		upkeep = {
+			sr_living_metal = 2
+			alloys = @b2_alloy_upkeep
+			energy = 15
+		}
+	}
+
+	inline_script = {
+		script = planet/supertensiles/giga_megaengineer_job_swap
+		jobs = @fe_jobs
+	}
+
+
+	upgrades = {
+		building_giga_fe_megaworkshop_doa_2
+	}
+
+	show_in_tech = giga_tech_fe_megaworkshop_doa_1
+}
+
+#Stabilized Tier
+
+building_giga_fe_megaworkshop_doa_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+
+	icon = building_giga_fe_megaworkshop_2
+
+	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		government
+		giga_supertensile
+	}
+
+	potential = {
+		has_global_flag = @giga_amb_flag
+		owner = {
+			has_technology = giga_tech_fe_megaworkshop_doa_2
+			is_fallen_empire = no
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+        }
+        has_global_flag = @giga_amb_flag
+	}
+
+	destroy_trigger = {
+	    OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            NOT = { has_global_flag = @giga_amb_flag }
+        }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			giga_sr_amb_megaconstruction = 10
+		}
+		cost = {
+			alloys = @b3_minerals
+			sr_living_metal = @fe_sr_cost
+		}
+		upkeep = {
+			sr_living_metal = 2
+			alloys = @[ b2_alloy_upkeep + 10 ]
+			energy = 15
+			unity = 10
+		}
+	}
+
+	inline_script = {
+		script = planet/supertensiles/giga_megaengineering_overseer_job_swap
+		jobs = 100
+	}
+	inline_script = {
+		script = planet/supertensiles/giga_megaengineer_job_swap
+		jobs = @[ fe_jobs - 100 ]
+	}
+
+	show_in_tech = giga_tech_fe_megaworkshop_doa_2
+}
+
+#Dark Energy Tier
+
+building_giga_fe_megaworkshop_doa_3 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+
+	icon = building_giga_fe_megaworkshop_2
+
+	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		government
+		giga_supertensile
+	}
+
+	potential = {
+		has_global_flag = @giga_amb_flag
+		owner = {
+			has_technology = giga_tech_fe_megaworkshop_doa_3
+			is_fallen_empire = no
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+        }
+        has_global_flag = @giga_amb_flag
+	}
+
+	destroy_trigger = {
+	    OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            NOT = { has_global_flag = @giga_amb_flag }
+        }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			giga_sr_amb_megaconstruction = 15
+		}
+		cost = {
+			alloys = @b3_minerals
+			sr_living_metal = @fe_sr_cost
+		}
+		upkeep = {
+			sr_living_metal = 3
+			alloys = @[ b2_alloy_upkeep + 15 ]
+			energy = 15
+			unity = 15
+		}
+	}
+
+	inline_script = {
+		script = planet/supertensiles/giga_megaengineering_overseer_job_swap
+		jobs = 200
+	}
+	inline_script = {
+		script = planet/supertensiles/giga_megaengineer_job_swap
+		jobs = @[ fe_jobs - 200 ]
+	}
+
+	show_in_tech = giga_tech_fe_megaworkshop_doa_3
+}
+

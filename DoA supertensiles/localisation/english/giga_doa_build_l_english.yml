@@ -1,0 +1,29 @@
+﻿l_english:
+ 
+ ############################################################################################################
+ # BUILDINGS
+
+ building_giga_fe_megaworkshop_doa:0 "Ascendancy Nano-Assembler"
+ building_giga_fe_megaworkshop_doa_plural:0 "Ascendancy Nano-Assemblers"
+ building_giga_fe_megaworkshop_doa_desc:0 "Huge molecular synthesis arrays work in tandem with replicator bays to process raw minerals into materials for orbital construction."
+
+ building_giga_fe_megaworkshop_doa_2:0 "Ascendancy Polyatomic Crucible"
+ building_giga_fe_megaworkshop_doa_2_plural:0 "Ascendancy Polyatomic Crucibles"
+ building_giga_fe_megaworkshop_doa_2_desc:0 "These facilities twist gravity to bind atoms into stable arrangements once thought impossible."
+ 
+ building_giga_fe_megaworkshop_doa_3:0 "Ascendancy Baryonic Loom"
+ building_giga_fe_megaworkshop_doa_3_plural:0 "AscendancyBaryonic Looms"
+ building_giga_fe_megaworkshop_doa_3_desc:0 "These facilities manipulate subatomic particles to create new and exciting forms of matter, taking the production of metamaterials to its logical conclusion."
+ 
+ ############################################################################################################
+ # BUILDINGS
+ 
+ giga_tech_fe_megaworkshop_doa_1:0 "$building_giga_fe_megaworkshop$"
+ giga_tech_fe_megaworkshop_doa_1_desc:0 "$building_giga_fe_megaworkshop_desc$"
+
+ giga_tech_fe_megaworkshop_doa_2:0 "$building_giga_fe_megaworkshop_2$"
+ giga_tech_fe_megaworkshop_doa_2_desc:0 "$building_giga_fe_megaworkshop_2_desc$"
+ 
+ giga_tech_fe_megaworkshop_doa_3:0 "$building_giga_fe_megaworkshop_3$"
+ giga_tech_fe_megaworkshop_doa_3_desc:0 "$building_giga_fe_megaworkshop_3_desc$"
+
