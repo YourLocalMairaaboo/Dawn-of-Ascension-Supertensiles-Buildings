@@ -1,0 +1,55 @@
+giga_tech_fe_megaworkshop_doa_1 = {
+	icon = giga_tech_fe_megaworkshop_1
+	area = physics
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { ascended_technologies }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		has_technology = tech_doa_pylon_1
+		has_global_flag = @giga_amb_flag
+		}
+	ai_weight = {
+       factor = 4
+	}
+}
+
+giga_tech_fe_megaworkshop_doa_2 = {
+	icon = giga_tech_fe_megaworkshop_2
+	area = physics
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { ascended_technologies }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { giga_tech_fe_megaworkshop_doa_1 }
+
+	potential = {
+		has_technology = tech_doa_stabilized_power_reactor
+		has_global_flag = @giga_amb_flag
+		}
+}
+
+giga_tech_fe_megaworkshop_doa_3 = {
+	icon = giga_tech_fe_megaworkshop_2
+	area = physics
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { ascended_technologies }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { giga_tech_fe_megaworkshop_doa_2 }
+
+	potential = {
+		has_technology = tech_doa_dark_energy_reactor
+		has_global_flag = @giga_amb_flag
+		}
+		ai_weight = {
+       factor = 4
+	}
+}
